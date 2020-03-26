@@ -1,7 +1,7 @@
 body{
     background-color: rgb(255, 255, 255);
     margin: 0;
-    padding: 1%;
+    padding: 1dd%;
     font-family: "Noto Serif TC", "serif" ,"微軟正黑體", "Microsoft JhengHei", "PMingLiU", Arial, "Helvetica", Verdana Sans-serif;
 }
 /* 上方功能列 */
@@ -38,8 +38,8 @@ nav ul {
     margin: 50px auto;
 }
 nav ul li{
-    display: inline-block;
-    width: 19%;
+    float: left;
+    width: 20%;
     margin: auto;
     box-sizing: border-box;
     text-align: center;
@@ -100,6 +100,35 @@ div.bottom-text p{
 div.img-div
 {
     text-align: center;
+}
+h2{
+    text-align: center;
+}
+.other{
+
+}
+.box-col4{
+    float: left;
+    width: 21%;
+    box-sizing: border-box;
+    margin: 2%;
+    vertical-align: top;
+}
+.box_img{
+    width: 100%;
+}
+.box_img>img{
+    width: 100%;
+}
+.box_title{
+    font-size: 1.2rem;
+}
+.box_text{
+    color: darkgray;
+}
+.box_more{
+    text-align: right;
+    font-weight: 900;
 }
 
 @media all and (max-width:1200px){
