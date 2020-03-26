@@ -1,9 +1,30 @@
 body{
     background-color: rgb(255, 255, 255);
     margin: 0;
-    padding: 0;
+    padding: 1%;
     font-family: "Noto Serif TC", "serif" ,"微軟正黑體", "Microsoft JhengHei", "PMingLiU", Arial, "Helvetica", Verdana Sans-serif;
 }
+/* 上方功能列 */
+.top_bar {
+    height: 50px;
+    margin-bottom: 40px;
+}
+.top_bar .left {
+     width: 300px;
+     float: left; 
+}
+.top_bar .right {
+     text-align: right;
+     float: right;
+}
+.top_bar a{
+    text-decoration:none;
+    color: #000;    
+}
+.top_bar a:hover{
+    border-bottom: darkblue solid 1px;
+}
+/*content*/
 .logo {
     /* text-align: center; */
     width: 286px;
@@ -31,7 +52,9 @@ nav ul li a{
 }
 nav ul li a:hover{
     color: darkblue;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    border-bottom: darkblue solid 1px;
+    padding-bottom: 6px;
 }
 img{
     width: 100%;
@@ -62,7 +85,7 @@ h1{
 }
 p.mark{
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     margin: 10px;
 
 }
