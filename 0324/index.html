@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
-    <script text="javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <style>
+        header{
+            color: rgb(255, 81, 0);
+        }
+    </style>
 </head>
 <body>
     <div>
-        <header>
-            <div>logo</div>
-            <div>標題</div>
+        <header class="wrapper">
+            <div id="logo">
+                <a href="https://google.com" target="_blank"><img src="img/logo.png" alt="taiwan"></a>
+            </div>
+            <h1 class="title">標題</h1>
             <nav>
                 <ul>
-                    <li>a</li>
+                    <li style="font-size: 2rem;">a</li>
                     <li>b</li>
                     <li>c</li>
                     <li>d</li>
@@ -23,6 +31,7 @@
             </nav>
         </header>
         <div>
+            <input type="button" class="btn">
             <section>
                 <a href="https://google.com" target="_blank">google</a>
             </section>
