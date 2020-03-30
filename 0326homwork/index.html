@@ -1,19 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+        .block>div{
+            text-align: left;
+            margin: 10px 0;
+        }
+        .title{
+            font-size: 1.2rem;
+            text-align: left;
+            color: rgb(110, 110, 110);
+
+        }
+        .box{
+            background: #c2c2c2;
+            color: #000;
+            margin: 0 1%;
+            float: left;
+        }
+        .width20{
+            width: 18%;
+        }
+        .width25{
+            width: 23%;
+        }
+        .width33{
+            width: 31.333%;
+        }
+        .width40{
+            width: 38%;
+        }
+        .width50{
+            width: 48%;
+        }
+        .width60{
+            width: 58%;
+        }
+        .width66{
+            width: 64.666%;
+        }
+        .width75{
+            width: 73%;
+        }
+        .width80{
+            width: 78%;
+        }
+    </style>
 </head>
-<body> 
+
+<body>
     <div class="container">
         <div class="block">
             <div class="title">Half Columns</div>
-            <div class="box">
-                
+            <div>
+                <div class="box width50">One Half </div>
+                <div class="box width50">One Half </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="title">Third Columns</div>
+            <div>
+                <div class="box width33">One Third </div>
+                <div class="box width33">One Third </div>
+                <div class="box width33">One Third </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width33">One Third </div>
+                <div class="box width66">Two Third </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width66">Two Third </div>
+                <div class="box width33">One Third </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="title">Quarter Columns</div>
+            <div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width50">Two Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width50">Two Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width50">Two Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width25">One Quarter</div>
+                <div class="box width75">Three Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width75">Three Quarter</div>
+                <div class="box width25">One Quarter</div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="title">Fifth Columns</div>
+            <div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width40">Two Fifth</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width60">Three Fifth</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width20">One Fifth</div>
+                <div class="box width80">Four Fifth</div>
+                <div style="clear:both;"></div>
+            </div>
+            <div>
+                <div class="box width40">Two Fifth</div>
+                <div class="box width60">Three Fifth</div>
+                <div style="clear:both;"></div>
             </div>
         </div>
     </div>
-    
+    </div>
+
+
 </body>
+
 </html>
