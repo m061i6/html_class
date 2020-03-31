@@ -144,8 +144,17 @@ dd {
 }
 
 /*--ad---*/
-#box {
-    margin-top: 20px;
+.box {
+    margin-top: 30px;
+}
+.box >*{
+    width: 48%;
+}
+#box_left{
+    float: left;
+}
+#box_right{
+    float: right;
 }
 .box_img {
     width: 100%;
@@ -157,7 +166,15 @@ dd {
     color: #FFF;
     width: 100%;
 }
+/*--section--*/
+#section{
 
+}
+#section>*{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+}
 /*--footer---*/
 .footer {
     background-color: #000;

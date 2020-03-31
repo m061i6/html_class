@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>表格練習</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        dl,
+        dt,
+        dd {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .first {
+            margin-left: 0 !important;
+        }
+
+        .wrapper {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #383838;
+
+        }
+
+        .wrapper header {
+            color: #fff;
+            width: 960px;
+            margin: 0 auto;
+            height: 150px;
+
+        }
+
+
+
+        header .logo {
+            position: relative;
+            top: 30px
+                /* margin-top: 10px; */
+        }
+
+        header .logo h1 {
+            font-size: 60px;
+        }
+
+
+
+        nav ul {
+            list-style: none;
+            position: relative;
+            top: 40px
+        }
+
+        nav ul li {
+            padding: 10px 30px;
+            float: left;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+        }
+
+
+
+
+        /* //中間banner */
+
+        .banner {
+            width: 960px;
+            height: 360px;
+            margin: 20px auto;
+            background-color: #252525;
+        }
+
+
+        /* 中間內容 */
+
+        .content {
+            width: 100%;
+            height: 800px;
+        }
+
+        .content .row {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .content .row .col-3 {
+            width: 32.66666%;
+            /* background-color: rgb(160, 160, 160); */
+            margin-left: 1%;
+        }
+
+
+        .content .row .col-3 .box {
+            width: 100%;
+            height: 180px;
+            background-color: rgb(160, 160, 160);
+        }
+
+        .content .row .col-3 dl {
+            margin-top: 10px;
+        }
+
+        .content .row .col-3 dd {
+            color: #acacac
+        }
+
+
+        .content .row .col-3 h4 {
+            font-style: italic
+        }
+
+
+
+        .content .sidebar {
+            padding: 30px 0 0 40px;
+            width: 300px;
+            background-color: rgb(237, 255, 186);
+            min-height: 300px;
+
+        }
+
+        .content .form {
+            padding: 30px 40px;
+            width: calc(100% - 300px);
+            min-height: 400px;
+            background-color: #eeeeee;
+        }
+
+
+        .form_group {
+            display: block;
+            width: 100%;
+            border: 1px solid #9c9c9c;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 10px 0;
+            height: calc(1.5em + .75rem + 1px);
+        }
+
+        .form_group:hover {
+            border: 1px solid #ff1f1f;
+            box-shadow: 1px 1px 10px #afafaf;
+
+        }
+
+
+        #submit {
+            border: 0;
+            background-color: rgb(0, 83, 236);
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        #reset {
+            border: 0;
+            background-color: rgb(251, 75, 5);
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        #submit:hover {
+            background-color: rgb(0, 67, 190);
+            cursor: pointer;
+        }
+
+        fieldset {
+            border: 1px solid #c7c7c7;
+            margin-bottom: 20px;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo left">
+                <h1>表格練習</h1>
+                <span>表單練習</span>
+            </div>
+            <nav class="right">
+                <ul class="nav">
+                    <li><a href="layout.html">版型練習</a></li>
+                    <li><a href="form.html">表單練習</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="sidebar left">
+                會員登入
+            </div>
+            <div class="form right">
+                <form action="#" method="GET">
+                    <div>
+                        <label for="account">帳號</label>
+                        <input class="form_group" type="text" name="account" id="">
+                    </div>
+                    <div> <label for="password">密碼</label>
+                        <input class="form_group" type="password" name="psw" id=""></div>
+                    <input id="submit" type="submit" value="送出">
+                    <input id="reset" type="reset" value="重置">
+                </form>
+                <br><br><br>
+
+                <form action="#" method="GET">
+                    <fieldset>
+                        <legend>會員註冊</legend>
+                        <div>
+                            <label for="user">*真實姓名</label>
+                            <input class="form_group" type="text" name="user" id="user" required>
+                        </div>
+                        <div> <label for="account">*帳號</label>
+                            <input class="form_group" type="text" name="account" id="account" required></div>
+                        <label for="psw">*密碼</label>
+                        <input class="form_group" id="psw" type="password" name="psw" maxlength="8" required minlength="8">
+                        <select class="form_group" name="area" id="" required>
+                            <option value="台北">台北</option>
+                            <option value="新北">新北</option>
+                            <option value="桃園">桃園</option>
+                        </select>
+                        <div>
+                            單選
+                            <input type="radio" name="sex" id="" value="male">
+                            <label for="男">男</label>
+                            <input type="radio" name="sex" id="" value="female">
+                            <label for="女">女</label>
+                        </div>
+                        <div>
+                            多選
+
+                            <input type="checkbox" name="skill" id="" value="html">
+                            <label for="">html</label>
+                            <input type="checkbox" name="skill" id="" value="css">
+                            <label for="">css</label>
+                            <input type="checkbox" name="skill" id="" value="js">
+                            <label for="">js</label>
+                        </div>
+
+
+
+                    </fieldset>
+                    <input id="submit" type="submit" value="送出">
+                    <input id="reset" type="reset" value="重置">
+                </form>
