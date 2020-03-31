@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table , tr , td {
+        table,
+        th,
+        tr,
+        td {
             border: #000 solid 1px;
             text-align: center;
         }
+
+        td {
+            width: 10%;
+            padding: 1%;
+        }
     </style>
 </head>
+
 <body>
     <div class="table">
         <table>
-            <tr>
-                <td rowspan="2">名稱</td>
-                <td colspan="2">日期 2018/11/27</td>
-                <td rowspan="2">小計</td>
-            </tr>
-            <tr>
-                <td>重量</td>
-                <td>單價</td>
-            </tr>
-            <tr>
-                <td>蘋果</td>
-                <td>10斤</td>
-                <td>20元</td>
-                <td>200元</td>
-            </tr>
-            <tr>
-                <td>香蕉</td>
-                <td>20斤</td>
-                <td>18元</td>
-                <td>360元</td>
-            </tr>
-            <tr>
-                <td colspan="3">總價</td>
-                <td>560元</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th rowspan="2">名稱</th>
+                    <th colspan="2">日期 2018/11/27</th>
+                    <th rowspan="2">小計</th>
+                </tr>
+                <tr>
+                    <td>重量</td>
+                    <td>單價</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>蘋果</td>
+                    <td>10斤</td>
+                    <td>20元</td>
+                    <td>200元</td>
+                </tr>
+                <tr>
+                    <td>香蕉</td>
+                    <td>20斤</td>
+                    <td>18元</td>
+                    <td>360元</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">總價</td>
+                    <td>560元</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
-    
+
 </body>
+
 </html>
